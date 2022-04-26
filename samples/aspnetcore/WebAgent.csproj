@@ -25,40 +25,63 @@
     </ItemGroup>
 
     <ItemGroup>
-        <EmbeddedResource Include="lib/indy.dll">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </EmbeddedResource>
+        <ContentWithTargetPath Include="lib/indy.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>indy.dll</TargetPath>
+        </ContentWithTargetPath>
+        <None Include="lib\indy.dll" />
 
-        <EmbeddedResource Include="lib/indy.dll.lib">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </EmbeddedResource>
+        <ContentWithTargetPath Include="lib/indy.dll.lib">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>indy.dll.lib</TargetPath>
+        </ContentWithTargetPath>
+        <None Include="lib\indy.dll.lib" />
+        
+        <ContentWithTargetPath Include="lib/libeay32md.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>libeay32md.dll</TargetPath>
+        </ContentWithTargetPath>
+        <None Include="lib\libeay32md.dll" />
 
-        <EmbeddedResource Include="lib/libeay32md.dll">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </EmbeddedResource>
+        <ContentWithTargetPath Include="lib/libsodium.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>libsodium.dll</TargetPath>
+        </ContentWithTargetPath>
+        <None Include="lib\libsodium.dll" />
 
-        <EmbeddedResource Include="lib/libsodium.dll">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </EmbeddedResource>
+        <ContentWithTargetPath Include="lib/libzmq.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>libzmq.dll</TargetPath>
+        </ContentWithTargetPath>
+        <None Include="lib\libzmq.dll" />
 
-        <EmbeddedResource Include="lib/libzmq.dll">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </EmbeddedResource>
-
-        <EmbeddedResource Include="lib/ssleay32md.dll">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </EmbeddedResource>
+        <ContentWithTargetPath Include="lib/ssleay32md.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>ssleay32md.dll</TargetPath>
+        </ContentWithTargetPath>
+        <None Include="lib\ssleay32md.dll" />
+        
     </ItemGroup>
 
     <ItemGroup>
-        <EmbeddedResource Include="Hyperledger.Aries.AspNetCore.Contracts.xml">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Hyperledger.Aries.AspNetCore.xml">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Hyperledger.Aries.xml">
-            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-        </EmbeddedResource>
+        <ContentWithTargetPath Include="xml\Hyperledger.Aries.AspNetCore.Contracts.xml">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>Hyperledger.Aries.AspNetCore.Contracts.xml</TargetPath>
+        </ContentWithTargetPath>
+        <None Include="xml\Hyperledger.Aries.AspNetCore.Contracts.xml" />
+
+        <ContentWithTargetPath Include="xml\Hyperledger.Aries.AspNetCore.xml">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>Hyperledger.Aries.AspNetCore.xml</TargetPath>
+        </ContentWithTargetPath>
+        <None Include="xml\Hyperledger.Aries.AspNetCore.xml" />
+
+        <ContentWithTargetPath Include="xml\Hyperledger.Aries.xml">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <TargetPath>Hyperledger.Aries.xml</TargetPath>
+        </ContentWithTargetPath>
+        <None Include="xml\Hyperledger.Aries.xml" />
+        
     </ItemGroup>
+    
 </Project>
